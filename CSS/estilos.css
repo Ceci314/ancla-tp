@@ -2,11 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+    font-family: 'Cinzel', sans-serif, 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-  
-.encabezado{
+  .encabezado{
     display:flex;
     justify-content: flex-start;
     background-color: #678983;
@@ -17,13 +16,16 @@
 }
 
 .logo{
-    width: 120px;
-    height: 120px;
+    width: 20vw;
+    height: 20vw;
+    /* width: 150px;
+    height: 150px; */
     margin: 20px;
 }
 h1{ 
     color:#eeeeee;
-    font-size: 80px;
+    font-size: 6vw;
+    /* font-size: 80px;  */
     text-shadow: 2px 2px black;
 }
 
@@ -39,7 +41,8 @@ h1{
 .menuAncla{
     text-decoration: none;
     color:#eeeeee;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 2vw;
  }
 .principal{
         display: flex;
@@ -50,13 +53,15 @@ h1{
         padding-top: 5%;
 }
 .section{
+    display:flex;
+    flex-direction: column;
     border: 5px solid  #088395;
     border-radius: 15px;
     margin: 40px;
     width: 30%;
     height: 100%;
     box-shadow: 3px 3px grey;
-    
+     
 
 }
 
@@ -68,14 +73,16 @@ h1{
     text-align: center;
     color: #eeeeee;
     text-shadow: 2px 2px black;
-    font-size: 30px;
+    font-size: 3vw;
+    /* font-size: 30px; */
 }
 .anclas{
     text-decoration: none;
     color:  #eeeeee;
     margin: 25%;
     padding: 1%;
-    font-size: 15px;
+    font-size: 1,5vw;
+    /* font-size: 15px; */
 
 }        
     /*.pie {
