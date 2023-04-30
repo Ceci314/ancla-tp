@@ -55,13 +55,16 @@ h1{
  .menuAncla:hover{
     color:  #85b2b9;
 }
+
 .principal{
         display: flex;
         justify-content: center;
         background: #85b2b9;
         align-items: center;
         gap: 5vw;
-        padding-top: 5%;
+        padding: 5%;
+        /* padding-top: 5%;
+        padding-bottom: 5%; */
 }
 .section{
     display:flex;
@@ -101,15 +104,14 @@ h1{
    
 
 }        
-    /*.pie {
-        background: #088395;
+    *.pie {
+        background:#088395;
         display:flex;
+        flex-flow: column;
         justify-content: center;
     }
 
-    h3{
-        background: #00FFCA;
-            }*/
+    
 /*------------Animaciones---------------------*/
 .anclas:active{
     transform: translate(0.2vw);
