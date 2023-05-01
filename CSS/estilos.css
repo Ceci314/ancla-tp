@@ -56,6 +56,10 @@ h1{
     color:  #85b2b9;
 }
 
+.cardDescription {
+    width: 100%;
+}
+
 .principal{
         display: flex;
         justify-content: center;
@@ -66,6 +70,10 @@ h1{
         /* padding-top: 5%;
         padding-bottom: 5%; */
 }
+.cursos{
+    margin-left: 5vw;
+}
+
 .section{
     display:flex;
     flex-direction: column;
@@ -75,9 +83,14 @@ h1{
     /*margin: 40px;*/
     width: 30%;
     height: 100%;
-    /*box-shadow: 3px 3px grey;*/
+    min-height: 40vw;
+    /* box-shadow: 3px 3px grey; */
      
+}
 
+.imagen {
+    width: 80%;
+    height: 150px;
 }
 
 .imagen1{    
@@ -117,7 +130,6 @@ h1{
     flex-flow: column;
     justify-content: center;
 }
-
 
 .red-social{
    width: 2.5%;
