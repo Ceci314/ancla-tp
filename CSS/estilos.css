@@ -172,6 +172,11 @@ h1{
     justify-content: center;
 }    
 
+.red-social{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
 /*------------Animaciones---------------------*/
 .anclas:active{
     transform: translate(0.2vw);
