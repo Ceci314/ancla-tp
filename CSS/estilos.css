@@ -104,16 +104,22 @@ h1{
    
 
 }        
-    *.pie {
-        background:#088395;
-        display:flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-
-    
+        
 /*------------Animaciones---------------------*/
 .anclas:active{
     transform: translate(0.2vw);
     box-shadow: none;
+}
+
+.pie {
+    background:#088395;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+.red-social{
+   width: 2.5%;
+   height: 2.5%;
 }
