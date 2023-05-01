@@ -55,7 +55,9 @@ h1{
  .menuAncla:hover{
     color:  #85b2b9;
 }
-
+.cardDescription {
+    width: 100%;
+}
 .principal{
         display: flex;
         justify-content: center;
@@ -79,7 +81,10 @@ h1{
      
 
 }
-
+.imagen {
+    width: 80%;
+    height: 150px;
+}
 .imagen1{    
     width: 100%;
     height: 100%;
