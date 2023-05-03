@@ -16,8 +16,12 @@
 .contenedor {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5vw;
 }
-
+.subtitulo1{
+    padding: 2%;
+}
 .logo{
     width: 12vw;
     height: 12vw;
@@ -41,6 +45,9 @@ h1{
     font-size: 1.5vw;
     padding: 0vw;
 } 
+.subtitulo3{
+    padding: 4vw;
+}
 .menu{
     list-style-type: none;
     display: flex;
@@ -123,15 +130,16 @@ h1{
     box-shadow: 0.3vw 0.3vw gray;
 }
 .tarjetasPres{
-    width: 30%;
+    
     margin-bottom: 20px;
     border: 0.2vw solid #088395;
-    width: 22vw;
-    height: 20vw;
-    flex-basis: 33.33%;
+    height: 30vw;
+    flex-basis: 28%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+    align-items: center;
+    gap: 1.5vw;
 }
 
 .tarjetaPres:nth-child(3n+1) {
@@ -150,6 +158,7 @@ h1{
     font-size: 1vw;
     list-style-type: none;
    
+   
 } 
 .lista-cur2{   
     background-color: #088395;
@@ -158,18 +167,23 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-
+    gap: 2px;
+    width: 100%;
+    height: 30%;
+ 
 }
 .boton{
-    font-size: 1vw;
-    color: #eeeeee;
+    font-size: 1.5vw;
+    color: black;
     text-decoration: none;
-
+    padding: 1vw;
+    border: 0.1vw solid #eeeeee;
+    background-color: #6497af;
 }
 .imagenLabo{
-    width: 80%;
+    width: 70%;
     height: 50%;
+    
 }    
 .pie {
     background:#088395;
@@ -190,7 +204,7 @@ h1{
 /*CHICAS: NO PUEDO ACHICAR EL TAMAÑO DE LAS IMAGENES DE REDES*/   
 .social{
     display: flex;
-    flex-direction: column;
+    gap: 2vw;
     justify-content: center;
 }    
 
