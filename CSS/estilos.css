@@ -18,7 +18,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1.5vw;
-    background-color: #85b2b9;
+    /* background-color: #85b2b9; */
+    background: -webkit-linear-gradient(#85b2b9, #6497af);
 }
 .subtitulo1{
     padding: 2%;
@@ -78,10 +79,12 @@ h1{
 .principal{
         display: flex;
         justify-content: center;
-        background: #85b2b9;
+        /* background: #85b2b9; */
+        background: -webkit-linear-gradient(#85b2b9, #6497af);
         align-items: center;
         gap: 5vw;
         padding: 5%;
+
 }
 .cursos{
     margin-left: 5vw;
