@@ -22,5 +22,50 @@
             <li class="menu-item"><a class="menuAncla" href="./contacto.html" target="_blank" rel="Contacto">Contacto</a></li>
         </ul>
     </nav>
+    <main>
+        <h3> Formulario de Contacto</h3>
+        <h4> Si estas interesado en alguno de nuestros cursos, no dudes en escribirnos</h4>
+        <h4> Nos pondremos en contacto a la brevedad</h4>
+        <form action="mailto= anclasalud@gfd.com" method="POST">
+            <div>
+                <label for="Nombreusuario"> Nombre: </label>  
+                <input type="text" name="Nombre" id="Nombreusuario" placeholder="Escriba su nombre" required/>
+            </div>
+            <div>
+                <label for="Apellido"> Apellido: </label>
+                <input type="text" name="Apellido" id="Apellido" placeholder="Escriba su apellido" required/>
+            </div>   
+            <div>
+                <label for="E-mail"> E-Mail: </label>  
+                <input type="email" id="E-mail" placeholder="Escriba su E-mail" required/>
+            </div>
+            <div>
+                <label for="Profesion">
+                Profesión:
+                </label> 
+                <label for="Médico" name="Profesion">
+                Médico
+                <input type="radio" id="Médico" name="Profesion" value="Médico">
+                </label> 
+                <label for="Enfermero" name="Profesion">
+                Enfermero
+                <input type="radio" id="Enfermero" name="Profesion" value="Enfermero"> 
+                </label>
+                <label for="Otro" name="Profesion">
+                Otro
+                <input type="radio" id="Otro" name="Profesion" value="Otro">
+                </label>   
+            </div>
+            <div>
+                <label for="Mensaje"> Deje sus dudas y comentarios aqui</label>
+                <textarea name=" mensaje" id="mensaje"> Escriba sus comentarios</textarea> 
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR"/>
+            </div>
+            </div>
+        </form>
+    </main>
+    
 </body>
 </html>
