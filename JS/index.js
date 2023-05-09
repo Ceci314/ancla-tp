@@ -29,7 +29,7 @@ var cad2=`<div class="pie">
 </div> 
          
 <div>
-    <a class="anclaInicio" href="#arriba"><img src="/IMG/pagina-de-inicio.png" alt="Inicio" class="anclaArriba"></a>
+    <a class="anclaInicio" href="#arriba"><img src="/IMG/flecha-arriba.png" alt="Inicio" class="anclaArriba"></a>
 </div>
 </div>`
 
