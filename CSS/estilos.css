@@ -206,8 +206,6 @@ h1{
     align-items: center;
 }
 
-
-/*CHICAS: NO PUEDO ACHICAR EL TAMAÑO DE LAS IMAGENES DE REDES*/   
 .social{
     display: flex;
     gap: 2vw;
@@ -244,6 +242,118 @@ h1{
     right: 2.8vw;
     margin-top: -7vw;
 }
+/*------------FORMULARIO CONTACTO---------------------*/
+.contacto{
+    background-color: #85b2b9;
+}    
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    margin: 5vw 20vw;
+}
+.formLabel{
+    display: block;
+    padding: 0.5vw;
+    font-size: 1.8vw;
+    color: black;
+    text-shadow: 0.1vw 0.1vw #eeeeee;
+}
+.formGrupo-input{
+    position:relative;
+}
+.formInput{
+    width: 100%;
+    background-color: #eeeeee;
+    border: transparent;
+    height: 2.5vw;
+    transition: 0.3s ease all;
+    color: black;
+    font-size: 1.2vw;
+}
+.formInput:focus{
+    border: 3px solid #088395;;
+    outline: none;
+}
+.formInput-error-activo{
+    display: block;
+}
+.formValidacion-estado{
+    position: absolute;
+    right: 0.6vw;
+    bottom: 0.7vw;
+    z-index: 1;
+    opacity: 0;
+}
+.formCheckbox{
+    margin-right: 0.5vw;
+}
+.formGrupo-terminos,
+.formMensaje,
+.formBoton-enviar{
+    grid-column: span 2;
+    padding: 0.1vw;
+}
+.formMensaje{
+    height: 3vw;
+    line-height: 3vw;
+    background-color: #F66060;
+    padding-left: 1vw;
+    border-radius: 0.5vw;
+    display: none;
+}
+.formMensaje-activo p{
+    margin: 0;
+}
+.formMensaje-activo{
+    display: block;
+}
+.formBoton-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formBoton{
+    height: 3vw;
+    line-height: 3vw;
+    width: 50%;
+    background-color: #eeeeee;
+    color: black;
+    font-size: 1.5vw;
+    text-shadow: 0.1vw 0.1vw #088395;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    box-shadow: 0.3vw 0.3vw gray;
+}
+.formMensaje-exito{
+    font-size: 1.8vw;
+    color: #1c970c;
+    padding: 1vw;
+    display: none;
+}
+.formMensaje-exito-activo{
+    display:block;
+}
+.grupoTextarea{
+    font-size: 1.6vw;
+}
+.formTextarea{
+    font-size: 1vw;
+}
+/**** Estilos para validacion****/
+.formGrupo-correcto .formValidacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+.formGrupo-incorrecto .formLabel{
+    color: #bb2929
+}
+.formGrupo-incorrecto .formInput{
+    border:3px solid #bb2929
+}
+
 
 /*------------Animaciones---------------------*/
 .anclas:active{
@@ -251,6 +361,10 @@ h1{
     box-shadow: none;
 }
 .boton:active{
+    transform: translate(0.2vw);
+    box-shadow: none;
+}
+.formBoton:active{
     transform: translate(0.2vw);
     box-shadow: none;
 }

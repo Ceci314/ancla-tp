@@ -13,56 +13,126 @@
     <header id="Idheader">
     </header>  
 
-    <main>
-        <h3> Formulario de Contacto</h3>
-        <h4> Si estas interesado en alguno de nuestros cursos, no dudes en escribirnos</h4>
-        <h4> Nos pondremos en contacto a la brevedad</h4>
-        <form action="mailto= anclasalud@gfd.com" method="POST">
-            <div>
-                <label for="Nombreusuario"> Nombre: </label>  
-                <input type="text" name="Nombre" id="Nombreusuario" placeholder="Escriba su nombre" required/>
+    <main class="contacto">
+        <h3 class="subtitulo"> Formulario de Contactos</h3>
+        <h4 class="subtitulo2"> Si estas interesado en alguno de nuestros cursos, no dudes en escribirnos.</h4>
+        <h4 class="subtitulo2"> Nos pondremos en contacto a la brevedad</h4>
+        <form action="" class="formulario" id="formulario">
+            <!-- grupo nombre-->
+            <div class="formGrupo" id="grupoNombre" >
+                <label for="nombre" class="formLabel">
+                    Nombre
+                </label>
+                <div class="formGrupo-input">
+                    <input type="text" class="formInput" name="nombre" id="nombre" placeholder="Juan">
+                    <i class="formValidacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formInput-error"> El nombre solo puede contener letras mayúsculas y minúsculas </p>
             </div>
-            <br>
-            <div>
-                <label for="Apellido"> Apellido: </label>
-                <input type="text" name="Apellido" id="Apellido" placeholder="Escriba su apellido" required/>
-            </div>  
-            <br>
-         
-            <div>
-                <label for="E-mail"> E-Mail: </label>  
-                <input type="email" id="E-mail" placeholder="Escriba su E-mail" required/>
+            
+            <!-- grupo apellido-->
+            <div class="formGrupo" id="grupoApellido">
+                <label for="apellido" class="formLabel">
+                    Apellido
+                </label>
+                <div class="formGrupo-input">
+                    <input type="text" class="formInput" name="apellido" id="apellido" placeholder="Pérez">
+                    <i class="formValidacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formInput-error"> El apellido solo puede contener letras mayúsculas y minúsculas </p>
             </div>
-            <div>
-                <label for="Profesion">
+            <!---grupo Contraseña-->
+            <div class="formGrupo" id="grupoPassword">
+                <label for="password" class="formLabel">
+                    Contraseña
+                </label>
+                <div class="formGrupo-input">
+                    <input type="password" class="formInput" name="password" id="password" >
+                    <i class="formValidacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formInput-error"> La contraseña tiene que ser de 4 a 16 dígitos </p>
+            </div>
+            <!--grupo Contraseña2-->
+            <div class="formGrupo" id="grupoPassword2">
+                <label for="password2" class="formLabel">
+                    Repetir Contraseña
+                </label>
+                <div class="formGrupo-input">
+                    <input type="password" class="formInput" name="password2" id="password2" >
+                    <i class="formValidacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formInput-error"> Ambas contraseñas deben ser iguales </p>
+            </div>
+             <!-- grupo Correo-->
+             <div class="formGrupo" id="grupoCorreo">
+                <label for="correo" class="formLabel">
+                    Correo Electronico
+                </label>
+                <div class="formGrupo-input">
+                    <input type="email" class="formInput" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formValidacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formInput-error"> El correo solo puede contener letras, números, puntos y guiones </p>
+            </div>
+            <!--grupo Telefono-->
+            <div class="formGrupo" id="grupoTelefono">
+                <label for="telefono" class="formLabel">
+                    Número de Telefono
+                </label>
+                <div class="formGrupo-input">
+                    <input type="number" class="formInput" name="telefono" id="telefono" placeholder="4444 4444">
+                    <i class="formValidacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formInput-error"> El número de telefono solo puede contener números </p>
+            </div>
+            <!-- grupo radio-->
+            <div class="formGrupo">
+                <label  for="Profesion" class="formLabel" >
                 Profesión:
                 </label> 
-                <label for="Médico" name="Profesion">
+                <label  for="Médico" class="formLabel1" name="Profesion">
                 Médico
                 <input type="radio" id="Médico" name="Profesion" value="Médico">
                 </label> 
-                <label for="Enfermero" name="Profesion">
+                <label for="Enfermero" class="formLabel1" name="Profesion">
                 Enfermero
                 <input type="radio" id="Enfermero" name="Profesion" value="Enfermero"> 
                 </label>
-                <label for="Otro" name="Profesion">
+                <label   for="Otro" class="formLabel1" name="Profesion">
                 Otro
                 <input type="radio" id="Otro" name="Profesion" value="Otro">
                 </label>   
             </div>
-            <div>
-                <label for="Mensaje"> Deja tus dudas y comentarios aqui</label>
-                <textarea name=" mensaje" id="mensaje"> Escribi tus comentarios</textarea> 
+            <!---Grupo Textarea-->
+            <div class="formGrupo">
+                <label for="Mensaje" class="formLabel grupoTextarea"> Deja tus dudas y comentarios</label>
+                <textarea name=" mensaje" id="mensaje" class="formTextarea formInput" > Escribí tus comentarios aquí</textarea> 
             </div>
-            <div>
-                <input type="submit" value="ENVIAR"/>
+            <!---Grupo Terminos y Condiciones-->
+            <div class="formGrupo formGrupo-terminos" id="grupoTerminos">
+                <label class="formLabel">
+                    <input   type="checkbox" class="formCheckbox"  name="terminos" id="terminos">
+                    Acepto los términos y Condiciones
+                </label>
             </div>
+            <div class="formMensaje" id="formMensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente</p>
             </div>
+            <div class="formGrupo formBoton-enviar">
+                <button type="submit" class="formBoton">
+                    ENVIAR
+                </button>
+                <p class="formMensaje-exito" id="formMensaje-exito"> Su formulario ha sido enviado exitosamente</p>
+            </div>
+            
         </form>
-    </main>
+       
+
+    </main>   
     <footer id="idfooter">
-        
     </footer>
     <script src="/JS/index.js"></script>
+    <script src="./JS/contacto.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
