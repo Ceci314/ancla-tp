@@ -275,22 +275,27 @@ h1{
     border: 3px solid #088395;;
     outline: none;
 }
+.formInput-error{
+    font-size: 1.3vw;
+    margin-bottom: 0;
+    display: none;
+}
 .formInput-error-activo{
     display: block;
 }
-.formValidacion-estado{
+   /* .formValidacion-estado{
     position: absolute;
     right: 0.6vw;
     bottom: 0.7vw;
     z-index: 1;
     opacity: 0;
-}
+}*/
 .formCheckbox{
     margin-right: 0.5vw;
 }
 .formGrupo-terminos,
 .formMensaje,
-.formBoton-enviar{
+.formGrupo-boton-enviar{
     grid-column: span 2;
     padding: 0.1vw;
 }
@@ -302,16 +307,16 @@ h1{
     border-radius: 0.5vw;
     display: none;
 }
-.formMensaje-activo p{
+.formMensaje p{
     margin: 0;
 }
-.formMensaje-activo{
-    display: block;
-}
-.formBoton-enviar{
+.formGrupo-boton-enviar{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.formMensaje-activo{
+    display: block;
 }
 .formBoton{
     height: 3vw;
@@ -343,13 +348,20 @@ h1{
     font-size: 1vw;
 }
 /**** Estilos para validacion****/
-.formGrupo-correcto .formValidacion-estado{
+.formGrupo-correcto .formInput {
     color: #1ed12d;
     opacity: 1;
+    border:3px solid #1ed12d
+
 }
 .formGrupo-incorrecto .formLabel{
     color: #bb2929
 }
+.formGrupo-incorrecto{
+    color:#bb2929;
+    opacity: 1;
+}
+
 .formGrupo-incorrecto .formInput{
     border:3px solid #bb2929
 }
