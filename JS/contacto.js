@@ -9,7 +9,13 @@ const exprRe = {
 	telefono: /^\d{7,14}$/ 
 }
 
-
+const objeto= {
+    nombre: false,
+    apellido: false,
+    password: false,
+    correo: false,
+    telefono: false
+}
 
 
 const validarFormulario = (evento) =>{
@@ -21,11 +27,13 @@ const validarFormulario = (evento) =>{
                 document.getElementById("grupoNombre").classList.remove("formGrupo-incorrecto");
                 document.getElementById("grupoNombre").classList.add("formGrupo-correcto");
                 document.querySelector("#grupoNombre").classList.remove("formInput-error-activo");
+                objeto["nombre"] = true
             }else{
                 document.getElementById("grupoNombre").classList.add("formGrupo-incorrecto");
                 document.getElementById("grupoNombre").classList.remove("formGrupo-correcto");
                 document.querySelector("#grupoNombre").classList.add("formInput-error-activo");
-                document.querySelector("#grupoNombre .formInput-error").classList.add("formInput-error-activo")
+                document.querySelector("#grupoNombre .formInput-error").classList.add("formInput-error-activo");
+                objeto["nombre"] = false
             }
         break
         case "apellido":    
@@ -33,11 +41,13 @@ const validarFormulario = (evento) =>{
                 document.getElementById("grupoApellido").classList.remove("formGrupo-incorrecto");
                 document.getElementById("grupoApellido").classList.add("formGrupo-correcto");
                 document.querySelector("#grupoApellido").classList.remove("formInput-error-activo");
+                objeto["apellido"] = true
             }else{
                 document.getElementById("grupoApellido").classList.add("formGrupo-incorrecto");
                 document.getElementById("grupoApellido").classList.remove("formGrupo-correcto");
                 document.querySelector("#grupoApellido").classList.add("formInput-error-activo");
-                document.querySelector("#grupoApellido .formInput-error").classList.add("formInput-error-activo")
+                document.querySelector("#grupoApellido .formInput-error").classList.add("formInput-error-activo");
+                objeto["apellido"] = false
         }
     
         break
@@ -46,11 +56,13 @@ const validarFormulario = (evento) =>{
                 document.getElementById("grupoPassword").classList.remove("formGrupo-incorrecto");
                 document.getElementById("grupoPassword").classList.add("formGrupo-correcto");
                 document.querySelector("#grupoPassword").classList.remove("formInput-error-activo");
+                objeto["password"] = true
             }else{
                 document.getElementById("grupoPassword").classList.add("formGrupo-incorrecto");
                 document.getElementById("grupoPassword").classList.remove("formGrupo-correcto");
                 document.querySelector("#grupoPassword").classList.add("formInput-error-activo");
-                document.querySelector("#grupoPassword .formInput-error").classList.add("formInput-error-activo")
+                document.querySelector("#grupoPassword .formInput-error").classList.add("formInput-error-activo");
+                objeto["password"] = false
         }
             validarPassword2()
         break
@@ -63,11 +75,13 @@ const validarFormulario = (evento) =>{
                 document.getElementById("grupoCorreo").classList.remove("formGrupo-incorrecto");
                 document.getElementById("grupoCorreo").classList.add("formGrupo-correcto");
                 document.querySelector("#grupoCorreo").classList.remove("formInput-error-activo");
+                objeto["correo"] = true
             }else{
                 document.getElementById("grupoCorreo").classList.add("formGrupo-incorrecto");
                 document.getElementById("grupoCorreo").classList.remove("formGrupo-correcto");
                 document.querySelector("#grupoCorreo").classList.add("formInput-error-activo");
-                document.querySelector("#grupoCorreo .formInput-error").classList.add("formInput-error-activo")
+                document.querySelector("#grupoCorreo .formInput-error").classList.add("formInput-error-activo");
+                objeto["correo"] = false
         }
         break
         case "telefono":
@@ -75,16 +89,17 @@ const validarFormulario = (evento) =>{
                 document.getElementById("grupoTelefono").classList.remove("formGrupo-incorrecto");
                 document.getElementById("grupoTelefono").classList.add("formGrupo-correcto");
                 document.querySelector("#grupoTelefono").classList.remove("formInput-error-activo");
+                objeto["telefono"] = true
+                
             }else{
                 document.getElementById("grupoTelefono").classList.add("formGrupo-incorrecto");
                 document.getElementById("grupoTelefono").classList.remove("formGrupo-correcto");
                 document.querySelector("#grupoTelefono").classList.add("formInput-error-activo");
-                document.querySelector("#grupoTelefono .formInput-error").classList.add("formInput-error-activo")
+                objeto["telefono"] = false
+                
+               
         }
         break                
-
-    
-    
     }
 }   
 const validarPassword2 = ()=> {
@@ -94,21 +109,38 @@ const validarPassword2 = ()=> {
         document.getElementById("grupoPassword2").classList.add("formGrupo-incorrecto");
         document.getElementById("grupoPassword2").classList.remove("formGrupo-correcto");
         document.querySelector("#grupoPassword2").classList.add("formInput-error-activo");
+        document.querySelector("#grupoPassword2 .formInput-error").classList.add("formInput-error-activo");
+        objeto["password"] = false
     }else{
         document.getElementById("grupoPassword2").classList.remove("formGrupo-incorrecto");
         document.getElementById("grupoPassword2").classList.add("formGrupo-correcto");
         document.querySelector("#grupoPassword2").classList.remove("formInput-error-activo");
+        document.querySelector("#grupoPassword2 .formInput-error").classList.remove("formInput-error-activo");
+        objeto["password"] = true
 
     }
 }
-
-
-                
+  
 inputs.forEach((input) => {
     input.addEventListener("keyup", validarFormulario);
     input.addEventListener ("blur", validarFormulario);
 })
+
+const terminos= document.getElementById("terminos")
+
 formulario.addEventListener ("submit", (evento) =>{
-    evento.preventDefault()
+    evento.preventDefault();
+    if (objeto.nombre && objeto.apellido && objeto.password && objeto.telefono && objeto.correo && terminos.checked){
+        formulario.reset()
+        document.getElementById("formMensaje-exito").classList.add("formMensaje-exito-activo")
+        setTimeout(() => {
+            document.getElementById("formMensaje-exito").classList.remove("formMensaje-exito-activo")
+        }, 4000);
+    }else{
+    document.getElementById("formMensaje").classList.add("formMensaje-activo")
+    setTimeout(() => {
+        document.getElementById("formMensaje").classList.remove("formMensaje-activo")
+    }, 3000);
+}
 })
 
