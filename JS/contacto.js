@@ -64,7 +64,7 @@ const validarFormulario = (evento) =>{
                 document.querySelector("#grupoPassword .formInput-error").classList.add("formInput-error-activo");
                 objeto["password"] = false
         }
-            validarPassword2()
+                
         break
         case "password2":
             validarPassword2()
@@ -140,7 +140,7 @@ formulario.addEventListener ("submit", (evento) =>{
     document.getElementById("formMensaje").classList.add("formMensaje-activo")
     setTimeout(() => {
         document.getElementById("formMensaje").classList.remove("formMensaje-activo")
-    }, 3000);
+    }, 4000);
 }
 })
 

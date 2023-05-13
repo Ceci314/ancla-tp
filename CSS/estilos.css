@@ -287,7 +287,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3vw;
-    margin: 0 15vw;
+    margin: 10vw 15vw;
 
     
 }
@@ -295,6 +295,7 @@ h1{
     display: block;
     padding: 0.5vw;
     font-size: 1.8vw;
+    font-weight: bolder;
     color: black;
     text-shadow: 0.1vw 0.1vw #eeeeee;
 }
@@ -414,6 +415,22 @@ h1{
     box-shadow: none;
 }
 /* -------------------media query-------------------------- */
+@media only screen and (max-width: 900px){
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formGrupo-terminos, .formMensaje, .formGrupo-boton-enviar{
+    grid-column: 1;
+    }
+    .formBoton{
+        width: 100%;
+    }
+    .formLabel1{
+        font-size: 1.8vw;
+               
+    }
+}
+
 
 @media only screen and (max-width: 425px) {
     .menu{
