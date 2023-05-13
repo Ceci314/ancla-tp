@@ -426,8 +426,7 @@ h1{
         width: 100%;
     }
     .formLabel1{
-        font-size: 1.8vw;
-               
+        font-size: 1.8vw;     
     }
 }
 
@@ -435,12 +434,51 @@ h1{
 @media only screen and (max-width: 425px) {
     .menu{
         flex-flow: column;
+        
     }
+
+    .menu-item {
+        text-align: center;
+        border-bottom-style: groove;
+        border-color: #85b2b9;
+        width: 100%;
+        }
+
+        .menuAncla{
+            font-size: small;
+        }
+
+.titulo, .anclas {
+    font-size: small;
+}
+.cardDescription{
+    font-size: x-small;
+}
+   .subtitulo, .subtitulo2{
+            font-size: 4vw;
+            padding: 5%;
+        }
+
     .ubicacion{
         display: none;
     }
     .social{
         flex:1 1 100%;
+    }
+
+    .red-social{
+        width: 8vw;
+        height: 8vw;
+    }
+    .anclaInicio{
+        position:fixed;
+        top:97%;
+        right: 2.8vw;
+        margin-top: -7vw;
+    }
+    .anclaArriba{
+        width: 8.5vw;
+        height: 8.5vw;
     }
     .registrado{
         font-size: xx-small;
@@ -449,25 +487,67 @@ h1{
         flex-flow: column;
     }
     .section{
-        width: 70%;
+        width: 90%;
+        height: auto;
     }
-    .cardDescription{
+
+    .imagen1{
+        width: 100%;
+        height: auto;
+    }
+    
+    .contenedor{
+        flex-flow: column;
+        gap:3vw;
+        align-items: center;
+    }
+
+    .imagenArea{
+        width: 40%;
+        height: 10%;
+    }
+    .tarjetasPres{
+        width: 60vw;
+    }
+    }
+
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    .menu{
+        flex-flow: column;
+        
+    }
+
+    .menu-item {
+       text-align: center;
+        border-bottom-style: groove;
+        border-color: #85b2b9;
+        width: 100%;
+    }
+    .menuAncla{
+        font-size: medium;
+    }
+    
+    .mapa{
+        display: none;
+    }
+    .domicilio{
         font-size: 2vw;
+
     }
-.contenedor{
-    flex-flow: column;
-    gap:3vw;
-    align-items: center;
-}
+    .social{
+        flex:1 1 35%;
+    }
 
-.imagenArea{
-    width: 40%;
-    height: 10%;
-}
-.tarjetasPres{
-    width: 60vw;
-}
-}
+    .registrado{
+        font-size: xx-small;
+    }
 
+    .contenedor{
+        gap:3vw;
+    }
+    .tarjetasPres{
+        flex-basis: 45%;
+    }
 
+}
 
