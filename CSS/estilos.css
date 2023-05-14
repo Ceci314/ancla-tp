@@ -90,6 +90,7 @@ h1{
         align-items: center;
         gap: 5vw;
         padding: 5%;
+        flex-wrap: wrap;
 
 }
 .cursos{
@@ -120,9 +121,7 @@ h1{
 .imagen2{
     height: 16vw;
 }
-.sugerenciaVacunacion {
-    text-align: center;
-}
+
 .titulo{
     text-align: center;
     color: #eeeeee;
@@ -215,6 +214,14 @@ h1{
     height: 50%;
 }
 
+.api{
+    flex: 1 1 100%;
+}
+.sugerenciaVacunacion {
+    text-align: center;
+    padding: 2%;
+    font-size: 1.5vw;
+}
 
 
     
@@ -435,9 +442,9 @@ h1{
 
 
 @media only screen and (max-width: 425px) {
-    .menu{
+    .menu {
         flex-flow: column;
-        
+
     }
 
     .menu-item {
@@ -445,112 +452,222 @@ h1{
         border-bottom-style: groove;
         border-color: #85b2b9;
         width: 100%;
-        }
+    }
 
-        .menuAncla{
-            font-size: small;
-        }
+    .menuAncla {
+        font-size: small;
+    }
 
-.titulo, .anclas {
-    font-size: small;
-}
-.cardDescription{
-    font-size: x-small;
-}
-   .subtitulo, .subtitulo2{
-            font-size: 4vw;
-            padding: 5%;
-        }
+    .titulo,
+    .anclas {
+        font-size: small;
+    }
 
-    .ubicacion{
+    .cardDescription {
+        font-size: x-small;
+    }
+
+    .subtitulo,
+    .subtitulo2 {
+        font-size: 4vw;
+        padding: 5%;
+    }
+
+    .sugerenciaVacunacion {
+        font-size: 2.5vw;
+    }
+
+    .pie {
+        padding: 3%;
+    }
+
+    .ubicacion {
         display: none;
     }
-    .social{
-        flex:1 1 100%;
+
+    .social {
+        flex: 1 1 100%;
     }
 
-    .red-social{
+    .red-social {
         width: 8vw;
         height: 8vw;
     }
-    .anclaInicio{
-        position:fixed;
-        top:97%;
+
+    .anclaInicio {
+        position: fixed;
+        top: 97%;
         right: 2.8vw;
         margin-top: -7vw;
     }
-    .anclaArriba{
+
+    .anclaArriba {
         width: 8.5vw;
         height: 8.5vw;
     }
-    .registrado{
+
+    .registrado {
         font-size: xx-small;
     }
-    .principal{
+
+    .principal {
         flex-flow: column;
     }
-    .section{
+
+    .section {
         width: 90%;
         height: auto;
     }
 
-    .imagen1{
+    .imagen1 {
         width: 100%;
         height: auto;
     }
-    
-    .contenedor{
+
+    .contenedor {
         flex-flow: column;
-        gap:3vw;
+        gap: 3vw;
         align-items: center;
-    }
-
-    .imagenArea{
-        width: 40%;
-        height: 10%;
-    }
-    .tarjetasPres{
-        width: 60vw;
-    }
-    }
-
-@media only screen and (min-width: 425px) and (max-width: 768px){
-    .menu{
-        flex-flow: column;
         
     }
 
+    .tarjetasPres {
+        width: 60vw;
+        height: auto;
+
+    }
+
+    .area-cur{
+        font-size: medium;
+    }
+    .imagenArea{
+        width: 100%;
+        height: auto;
+    }
+    .cursos{
+        font-size: smaller;
+    }
+    .boton{
+        font-size: xx-small;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .menu {
+        flex-flow: column;
+
+    }
+
     .menu-item {
-       text-align: center;
+        text-align: center;
         border-bottom-style: groove;
         border-color: #85b2b9;
         width: 100%;
     }
-    .menuAncla{
+
+    .menuAncla {
         font-size: medium;
     }
-    
-    .mapa{
+
+    .sugerenciaVacunacion {
+        font-size: 1.8vw;
+    }
+
+    .mapa {
         display: none;
     }
-    .domicilio{
-        font-size: 2vw;
+
+    .domicilio {
+        font-size: 2.3vw;
 
     }
-    .social{
-        flex:1 1 35%;
+
+    .social {
+        flex: 1 1 35%;
     }
 
-    .registrado{
+    .red-social{
+        width: 4vw;
+        height: auto;
+    }
+
+    .registrado {
         font-size: xx-small;
     }
 
-    .contenedor{
-        gap:3vw;
+    .contenedor {
+        gap: 3vw;
     }
-    .tarjetasPres{
+
+    /* .tarjetasPres {
         flex-basis: 45%;
+    } */
+
+    .tarjetasPres {
+        flex-basis: 45%;
+        width: 40vw;
+        height: auto;
+
     }
+
+    .area-cur{
+        font-size: small;
+    }
+    .imagenArea{
+        width: 100%;
+        height: auto;
+    }
+    .cursos{
+        font-size: x-small;
+    }
+    .boton{
+        font-size: x-small;
+    }
+
+
+
+
+
+
+
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .mapa {
+        width: 180px;
+        height: 120px;
+    }
+
+    .domicilio {
+        font-size: 1.5vw;
+
+    }
+
+    .social {
+        flex: 1 1 30%;
+    }
+
+    .registrado {
+        font-size: xx-small;
+    }
+
+    .contenedor {
+        gap: 3vw;
+    }
+
+    .tarjetasPres {
+        flex-basis: 45%;
+    }
+
+    .area-cur{
+        font-size: large;
+    }
+
+    .cursos{
+        font-size: medium;
+    }
+
+
+}
