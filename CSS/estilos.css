@@ -120,6 +120,9 @@ h1{
 .imagen2{
     height: 16vw;
 }
+.sugerenciaVacunacion {
+    text-align: center;
+}
 .titulo{
     text-align: center;
     color: #eeeeee;
