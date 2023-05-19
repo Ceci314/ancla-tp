@@ -2,18 +2,21 @@ async function fetchApi(apiUrl) {
     const response = await fetch(apiUrl);
     const data = await response.json();
     return data;
-  }
-
-function selectRandom(ids) {
-    const randomId = Math.floor(Math.random() * ids.length);
-    return ids[randomId];
 }
-  
-(async function() {
-    const randomId = selectRandom([533,531,541,551])
-    const result = await fetchApi("https://health.gov/myhealthfinder/api/v3/topicsearch.json?lang=es&topicId="+randomId);
-    const title = (result.Result.Resources.Resource[0].Title);
-    const targetUrl = (result.Result.Resources.Resource[0].AccessibleVersion);
-    document.getElementById("recomendacionVacunaGobUSA").textContent = title;
-    document.getElementById("recomendacionVacunaGobUSA").href = targetUrl;
+​
+function getAverage(temperaturesArray) {
+    let sum = temperaturesArray.reduce((previous, current) => current += previous);
+    let avg = sum / temperaturesArray.length;
+    return avg.toFixed(1);
+}
+​
+(async function () {
+    // Las coordenadas indicadas (-34.61, -58.38) corresponden a la Ciudad de Buenos Aires
+    // Traerá un array, con las temperaturas POR HORA pronosticadas para el día siguiente
+    // se calculará el promedio.
+    const newUrl = 'https://api.open-meteo.com/v1/forecast?latitude=-34.61&longitude=-58.38&hourly=temperature_2m&forecast_days=1&timezone=America%2FSao_Paulo&timeformat=unixtime'
+    const result = await fetchApi(newUrl);
+    const promedio = getAverage(result["hourly"]["temperature_2m"]);
+    document.getElementById('contenidoTemperatura').innerText = 'La temperatura promedio esperada para mañana es de ' + promedio + "°C";
+​
 })();
