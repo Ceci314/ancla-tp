@@ -1,14 +1,14 @@
-async function fetchApi(apiUrl) {
+async function fetchApi(apiUrl){
     const response = await fetch(apiUrl);
     const data = await response.json();
     return data;
 }
-​function getAverage(temperaturesArray) {
+function getAverage(temperaturesArray) {
     let sum = temperaturesArray.reduce((previous, current) => current += previous);
     let avg = sum / temperaturesArray.length;
-    return avg.toFixed(1);
+    return avg.toFixed(1);    
 }
-​(async function () {
+(async function() {
     // Las coordenadas indicadas (-34.61, -58.38) corresponden a la Ciudad de Buenos Aires
     // Traerá un array, con las temperaturas POR HORA pronosticadas para el día siguiente
     // se calculará el promedio.
@@ -16,4 +16,4 @@ async function fetchApi(apiUrl) {
     const result = await fetchApi(newUrl);
     const promedio = getAverage(result["hourly"]["temperature_2m"]);
     document.getElementById('contenidoTemperatura').innerText = 'La temperatura promedio esperada para mañana es de ' + promedio + "°C";
-​})();
+})();
