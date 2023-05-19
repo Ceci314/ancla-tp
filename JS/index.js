@@ -6,9 +6,9 @@ var cad = `<a name="arriba"><div class="encabezado">
 <nav>
 <ul class="menu">
     <li class="menu-item"><a class="menuAncla" href="./index.html" rel="Inicio">Inicio</a></li>
-    <li class="menu-item"><a class="menuAncla" href="./presenciales.html" target="_blank" rel="Cursos Presenciales">Cursos Presenciales</a></li>
-    <li class="menu-item"><a class="menuAncla" href="./virtuales.html" target="_blank" rel="Cursos Virtuales">Cursos Virtuales</a></li>
-    <li class="menu-item"><a class="menuAncla" href="./contacto.html" target="_blank" rel="Contacto">Contacto</a></li>
+    <li class="menu-item"><a class="menuAncla" href="./presenciales.html" rel="Cursos Presenciales">Cursos Presenciales</a></li>
+    <li class="menu-item"><a class="menuAncla" href="./virtuales.html"  rel="Cursos Virtuales">Cursos Virtuales</a></li>
+    <li class="menu-item"><a class="menuAncla" href="./contacto.html"  rel="Contacto">Contacto</a></li>
 </ul>
 </nav>`
 
