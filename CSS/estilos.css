@@ -5,6 +5,7 @@
     font-family: 'Cinzel', sans-serif, 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+    
   .encabezado {
     display:flex;
     justify-content: flex-start;
@@ -66,6 +67,8 @@ h1{
 }
 
 
+
+
 .menuAncla{
     text-decoration: none;
     color:#eeeeee;
@@ -93,9 +96,6 @@ h1{
         flex-wrap: wrap;
 
 }
-.cursos{
-    margin-left: 5vw;
-}
 
 .section{
     display:flex;
@@ -114,6 +114,7 @@ h1{
     width: 24vw;
     height: 16vw;
 }
+
 /* .imagen1{    
     width: 100%;
     height: 100%;
@@ -150,11 +151,10 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5vw;
-    padding-bottom: 8vw;
+    gap: 1.8vw;
     background-color:#088395;
-    padding: 2%;
-}
+    padding-bottom: 3%;
+   }
 
 .tarjetaPres:nth-child(3n+1) {
     margin-right: 20px;
@@ -167,6 +167,8 @@ h1{
 .area-cur{
     font-size: 1.8vw;
     text-shadow: 0.1vw 0.1vw black;
+    padding: 3%;
+    height: 7.5vw;
     
 }
 .tamañofuente1{
@@ -178,12 +180,12 @@ h1{
     flex-wrap: wrap;*/
     gap: 2px;
     width: 100%;
+    height: 12vw;
     
     
 }
 .arregloImagen{
     width: 100%;
-    
     
 }
 .cursos{
@@ -192,10 +194,9 @@ h1{
     padding: 0.4vw;
     margin-left: 0.5vw;
     text-align: center;
-} 
-.tamañofuente3{
-    font-size: 1vw;
-}
+    /* flex-wrap: nowrap; */
+    } 
+
 
 .boton{
     font-size: 1.5vw;
@@ -210,9 +211,11 @@ h1{
    background-color:#eeeeee ;
 }
 .imagenArea{
-    width: 70%;
-    height: 50%;
+    width: 80%;
+    height: auto;
 }
+
+
 
 .api{
     flex: 1 1 100%;
@@ -221,7 +224,7 @@ h1{
 .temperatura {
     text-align: center;
     padding: 2%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color:#eeeeee;
     border-radius: 0.9vw;
     border: 0.4vw solid #088395;
@@ -433,7 +436,7 @@ h1{
 
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 465px) {
     .menu {
         flex-flow: column;
 
@@ -453,10 +456,13 @@ h1{
     .titulo,
     .anclas {
         font-size: small;
+        min-height: fit-content;
     }
 
+    
     .cardDescription {
         font-size: x-small;
+        padding: 3%;
     }
 
     .subtitulo,
@@ -465,7 +471,7 @@ h1{
         padding: 5%;
     }
 
-    .sugerenciaVacunacion {
+    .temperatura {
         font-size: 2.5vw;
     }
 
@@ -514,6 +520,7 @@ h1{
     .imagen1 {
         width: 100%;
         height: auto;
+        padding: 3%;
     }
 
     .contenedor {
@@ -524,7 +531,7 @@ h1{
     }
 
     .tarjetasPres {
-        width: 60vw;
+        width: 80vw;
         height: auto;
 
     }
@@ -536,15 +543,19 @@ h1{
         width: 100%;
         height: auto;
     }
+            
     .cursos{
         font-size: smaller;
     }
     .boton{
         font-size: xx-small;
     }
+    .lista-cur2{  
+        height: 17vw;
+    }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 465px) and (max-width: 768px) {
     .menu {
         flex-flow: column;
 
@@ -561,7 +572,8 @@ h1{
         font-size: medium;
     }
 
-    .sugerenciaVacunacion {
+    
+    .temperatura {
         font-size: 1.8vw;
     }
 
@@ -587,17 +599,18 @@ h1{
         font-size: xx-small;
     }
 
+    .section{
+        width: 45%;
+        height: auto;
+    }
     .contenedor {
         gap: 3vw;
     }
-
-    /* .tarjetasPres {
-        flex-basis: 45%;
-    } */
+   
 
     .tarjetasPres {
         flex-basis: 45%;
-        width: 40vw;
+        width: 60vw;
         height: auto;
 
     }
@@ -616,6 +629,9 @@ h1{
         font-size: x-small;
     }
 
+}    
+
+
     @media only screen and (max-width: 900px){
         .formulario{
             grid-template-columns: 1fr;
@@ -631,12 +647,6 @@ h1{
         }
     }
 
-
-
-
-
-
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -675,4 +685,45 @@ h1{
     }
 
 
+}
+
+/* ----------------------SLIDE------------------------- */
+
+.slider-frame {
+    padding: 1%;
+	width: 100%;
+    height: auto;
+	}
+
+.slider-frame ul {
+	display: flex;
+	padding: 1%;
+	width: 300%;
+	
+	animation: slide 18s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+list-style: none;
+   }
+   
+.sld1,.sld2, .sld3 {
+    text-align: center;
+    color: white;
+    text-shadow: 0.1vw 0.1vw rgb(0, 0, 0);
+    font-size: 2.5vw;
+    margin: auto 10px;
+}
+
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	25% {margin-left: 0;}
+	
+	30% {margin-left: -100%;}
+	60% {margin-left: -100%;}
+	
+	65% {margin-left: -200%;}
+	100% {margin-left: -200%;}
 }
