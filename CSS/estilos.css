@@ -584,7 +584,14 @@ h1{
         line-height: 6vw;
         font-size: 2.5vw;
     }
-
+    .formMensaje-exito{
+        font-size: 4vw;
+        padding: 2vw;
+        
+    }
+    .formInput-error{
+        font-size: 3.5vw;
+    }
 }
 
 @media only screen and (min-width: 465px) and (max-width: 768px) {
@@ -692,7 +699,15 @@ h1{
         font-size: 2.5vw;
   
     }
-}    
+    .formMensaje-exito{
+        font-size: 3.5vw;
+        padding: 1.5vw;
+    }
+    .formInput-error{
+        font-size: 2.5vw;
+    }
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -750,6 +765,13 @@ h1{
     }
     .formInput{
         height: 5vw;
+        font-size: 2vw;
+    }
+    .formMensaje-exito{
+        font-size: 2.5vw;
+        padding: 1.8vw;
+    }
+    .formInput-error{
         font-size: 2vw;
     }
    }
