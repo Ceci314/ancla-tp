@@ -559,25 +559,32 @@ h1{
     .formGrupo-terminos, .formMensaje, .formGrupo-boton-enviar{
     grid-column: 1;
     }
+
     .formLabel1{
-        font-size: 2.5vw;     
+        font-size: 3.5vw;     
     }
     .formLabel{
         font-size: 3.5vw;
     }
     .formInput{
-        height: 4vw;
-        font-size: 2.1w;
+        height: 9vw;
+        font-size: 4vw;
     }
     .formBoton{
-        height: 3.8vw;
-        line-height: 3.8vw;
-        font-size: 2.5vw;
+        height: 4vw;
+        line-height: 4vw;
+        font-size: 3vw;
         width: 100%;
     }  
     .subtitulo2{
         font-size: 2.5vw;
     } 
+    .formMensaje{
+        height: 6vw;
+        line-height: 6vw;
+        font-size: 2.5vw;
+    }
+
 }
 
 @media only screen and (min-width: 465px) and (max-width: 768px) {
@@ -664,8 +671,8 @@ h1{
         font-size: 2.5vw;
     }
     .formInput{
-        height: 3.5vw;
-        font-size: 1.8vw;
+        height: 7vw;
+        font-size: 2.8vw;
     }
     .formLabel1{
         font-size: 2vw;     
@@ -679,6 +686,12 @@ h1{
     .subtitulo2{
         font-size: 2.2vw;
     } 
+    .formMensaje{
+        height: 5vw;
+        line-height: 5vw;
+        font-size: 2.5vw;
+  
+    }
 }    
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -736,8 +749,8 @@ h1{
         font-size: 2vw;
     }
     .formInput{
-        height: 3vw;
-        font-size: 1.5vw;
+        height: 5vw;
+        font-size: 2vw;
     }
    }
 
