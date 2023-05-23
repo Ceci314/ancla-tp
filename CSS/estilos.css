@@ -553,6 +553,31 @@ h1{
     .lista-cur2{  
         height: 17vw;
     }
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formGrupo-terminos, .formMensaje, .formGrupo-boton-enviar{
+    grid-column: 1;
+    }
+    .formLabel1{
+        font-size: 2.5vw;     
+    }
+    .formLabel{
+        font-size: 3.5vw;
+    }
+    .formInput{
+        height: 4vw;
+        font-size: 2.1w;
+    }
+    .formBoton{
+        height: 3.8vw;
+        line-height: 3.8vw;
+        font-size: 2.5vw;
+        width: 100%;
+    }  
+    .subtitulo2{
+        font-size: 2.5vw;
+    } 
 }
 
 @media only screen and (min-width: 465px) and (max-width: 768px) {
@@ -628,25 +653,33 @@ h1{
     .boton{
         font-size: x-small;
     }
-
-}    
-
-
-    @media only screen and (max-width: 900px){
-        .formulario{
-            grid-template-columns: 1fr;
-        }
-        .formGrupo-terminos, .formMensaje, .formGrupo-boton-enviar{
-        grid-column: 1;
-        }
-        .formBoton{
-            width: 100%;
-        }
-        .formLabel1{
-            font-size: 1.8vw;     
-        }
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formGrupo-terminos, .formMensaje, .formGrupo-boton-enviar{
+    grid-column: 1;
     }
 
+    .formLabel{
+        font-size: 2.5vw;
+    }
+    .formInput{
+        height: 3.5vw;
+        font-size: 1.8vw;
+    }
+    .formLabel1{
+        font-size: 2vw;     
+    }
+    .formBoton{
+        height: 3.5vw;
+        line-height: 3.5vw;
+        font-size: 2vw;
+        width: 100%;
+    }  
+    .subtitulo2{
+        font-size: 2.2vw;
+    } 
+}    
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -684,8 +717,29 @@ h1{
         font-size: medium;
     }
 
-
-}
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formGrupo-terminos, .formMensaje, .formGrupo-boton-enviar{
+        grid-column: 1;
+    }
+    .formBoton{
+        width: 100%;
+    }
+    .formLabel1{
+        font-size: 1.8vw;     
+    }
+    .subtitulo2{
+        font-size: 2vw;
+    } 
+    .formLabel{
+        font-size: 2vw;
+    }
+    .formInput{
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+   }
 
 /* ----------------------SLIDE------------------------- */
 
