@@ -34,6 +34,11 @@
     width: 12vw;
     height: 12vw;
 }
+#carrito{
+    width: 4vw;
+    height: 4vw;
+
+}
 h1{ 
     color:#eeeeee;
     font-size: 5vw;
@@ -271,8 +276,8 @@ h1{
     }    
     
     .red-social{
-        width: 4.3vw;
-        height: 4.3vw;
+        width: 3.3vw;
+        height: 3.3vw;
     }
     
 .anclaArriba{
