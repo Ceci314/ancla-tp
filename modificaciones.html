@@ -21,7 +21,7 @@
         </form>
 
         <div v-if="mostrarDatosCurso">
-            <h2>Datos del curso</h2>
+            <h3>Datos del curso</h3>
             <form @submit.prevent="guardarCambios">
                 <label for="descripcionModificar">Descripción:</label>
                 <input type="text" id="descripcionModificar" v-model="descripcion" required><br>
