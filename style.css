@@ -152,5 +152,11 @@ a:hover {
     font-size: 15px;
 }
 .modificar{
-    font-size: 15px;
+    font-size: 12.5px;
+    background-color: #85b2b9;
+}
+
+#cancelar{
+    font-size: 12.5px;
+    background-color: #85b2b9;
 }
